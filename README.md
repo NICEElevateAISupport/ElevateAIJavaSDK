@@ -38,7 +38,7 @@ import elevateAi.client.Client;
         var cli = Client.newInstance(baseUrl, apiToken);
 
         // Step 2,3
-        var it = cli.declare("en-us", "default", "highAccuracy", null, null, false);
+        var it = cli.declare("en-us", "default", "highAccuracy");
 
         // Step 4
         var uploadOk = cli.upload(it, "d:/dev/elevateai-cli/sample-media/media.wav");
